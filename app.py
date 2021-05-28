@@ -10,13 +10,13 @@ story = stories.Story(
 
 app = Flask(__name__)
 
-@app.route('/madlibs')
+@app.route('/')
 def madlibs_fill():
     """Gets the person's input for Madlibs"""
 
     #get the template from story.prompts and loop thru it
   
-
+    
     return render_template("madlibs.html", prompts = story.prompts)
 
 @app.route('/story')
